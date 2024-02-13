@@ -1,0 +1,33 @@
+@import './../../styles.scss';
+
+.start-screen {
+    background-color: #404040;
+    @include dflex();
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.start-lable-box {
+    position: relative;
+}
+
+.start-lable-button {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button {
+    width: 200px;
+    height: auto;
+
+    &:hover {
+        filter: brightness(1.15);
+        cursor: pointer;
+    }
+}

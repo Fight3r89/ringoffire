@@ -1,0 +1,18 @@
+@import './../../styles.scss';
+
+.player {
+    @include dflex($jc : none);
+    background-color: orange;
+    width: 300px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    >img {
+        margin-left: 16px;
+    }
+
+    >span {
+        font-size: 32px;
+        margin-left: 14px;
+    }
+}
