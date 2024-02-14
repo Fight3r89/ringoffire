@@ -25,7 +25,6 @@ export class GameComponent {
   }
   newGame() {
     this.game = new Game();
-    console.log(this.game.stack);
   }
   takeCard() {
     if (!this.pickCardAnimation) {
@@ -47,7 +46,7 @@ export class GameComponent {
     const dialogRef = this.dialog.open(DialogAddPlayerComponent);
 
     dialogRef.afterClosed().subscribe((name: string) => {
-      if(name = '') this.game.players.push(name);
+      if(name != '') this.game.players.push(name);
     });
   }
 }
